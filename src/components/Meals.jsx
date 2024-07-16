@@ -9,7 +9,7 @@ export default function Meals() {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp('https://food-app-backend-l4f4.onrender.com', requestConfig, []);
+  } = useHttp('https://food-app-backend-l4f4.onrender.com/meals', requestConfig, []);
 
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;
